@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-import img from "./MR-Future-Products-2020-2.webp";
+import img from '../assets/MR-Future-Products-2020-2.webp'
 import { BsSuitHeart } from "react-icons/bs";
 
 class Cards extends Component {
