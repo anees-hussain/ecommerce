@@ -13,17 +13,18 @@ class Cards extends Component {
   };
 
   render() {
-    const { productName } = this.props;
+    const { productName, description, price } = this.props;
     const { qty } = this.state;
 
     return (
       <>
-        <Card style={{ width: "18rem" }}>
+        <Card style={{ width: "12rem", marginBottom: "1rem" }}>
           <Card.Img variant="top" src={img} />
           <Card.Body>
             <Card.Title>{productName}</Card.Title>
 
-            <Card.Text>Product Description</Card.Text>
+            <Card.Text>${price}</Card.Text>
+            <Card.Text>{description}</Card.Text>
 
             <Button variant="warning" style={{ margin: "1px" }}>
               Buy Now
